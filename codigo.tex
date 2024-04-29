@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{latexsym,amssymb}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[dvips]{graphicx}
+\usepackage{float}
+\usepackage{natbib}
+\newtheorem{teor}{Teorema}
+\title{Numeros naturales y numeros figurados }
+\author{Jhoselin Coronel}
+\date{29 de abril de 2024}
+\begin{document}
+\maketitle
+\section{Numeros naturales y subconjuntos de interes}
+En lo que sigue vamos a encontrar con frecuencia cada una de las clases de numeros que hemos revisado. Sin embargo, vamos a enfocar nuestra atencion principalmente en los numeros naturales ( algo menos en los enteros ), y en propiedades y subconjuntos de interes de $\mathbb{N}_0$.\cite{vazquez2017numeros}
+\begin{teor}[Algoritmo de la division]\label{uno}
+Sean $a$ y $b$ números naturales cualesquiera $\left ( b> 0 \right )$.Existen dos numeros únicos $q$ y $r$, llamados cociente y residuo, respectivamente, tales que:
+\begin{align*}
+a= bq+r \quad con & \quad 0\leq r< b& 
+\end{align*}
+\end{teor}
+
+\begin{proof}[Demostracion]
+Dado $a$ y $b$ números naturales con $b>0$, podemos escribir 
+$a$ en términos de $b$ como $a=bq+r$, donde 
+$q$ es el cociente y 
+$r$ es el residuo. Queremos demostrar que existe un par único $q$ y $r$ que satisfaga esta ecuación,con $0\leq r< b$. Primero, veamos que existe al menos un par $q$ y $r$ que satisface la ecuación. Podemos demostrarlo utilizando el principio de la división entera.
+Despues, probamos la unidad del par $q$ y $r$ .Supongamos que hay dos pares $q_1$ y $r_1$, $q_2$ y $r_2$ que satisfagan la ecuacion. Restando estas ecuaciones, obtenemos $b(q_1-q_2)=r_1-r_2$. Dado que $0\leq r_1< b$ y $0\leq r_2< b$, la única posibilidad es que $r_1= r_2$, lo que implica  $q_1= q_2$. Por lo tanto, hemos demostrado que existe un unico par $q$ y $r$ que satisfacen la ecuacion $a=bq+r$ con $0\leq r< b$
+\end{proof}
+\subsection{particiones}
+Cuando somos ninos, uno de los primeros hechos que aprendemos respecto a los numeros naturales es que este conjunto se puede separar en pares e impares:
+$$\mathbb{N}_0$$
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\color{red} \bf pares & \color{red} \bf impares \\
+\hline  
+\bf 0& \bf 1 \\
+\hline
+\bf 2 & \bf 3\\
+\hline
+\bf 4 & \bf 5\\
+\hline
+\bf 6 & \bf 7\\
+\hline
+\bf 8 & \bf 9\\
+\hline
+\bf ... & \bf ...\\
+\hline
+\bf 2q & \bf 2q+1\\
+\hline
+\end{tabular}
+\end{center}
+\section{Numeros figurados}
+En matemáticas, un número figurado es todo número natural que, al ser representado por un conjunto de puntos equidistantes, puede formar una figura geométrica regular.\cite{rosas2008numeros}
+
+\subsection{Numeros triangulares}
+\begin{description}
+\item[Formula:] $t_n= \frac{n\left ( n+1 \right )}{2}$
+\end{description}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{t1.jpg}
+\end{figure}
+\subsection{Numeros cuadrados}
+\begin{description}
+\item[Formula:] $c_n= n^{2}$
+\end{description}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{c1.jpg}
+\end{figure}
+\subsection{Numeros pentagonales}
+\begin{description}
+\item[Formula:] $p_n=\frac{n\left ( 3n-1 \right )}{2}$
+\end{description}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{pt.jpg}
+\end{figure}
+\bibliographystyle{plain}
+\bibliography{citasapa}
+\end{document}
